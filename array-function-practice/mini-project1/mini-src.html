@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function split(fullname) {
+        
+            var name = ""
+            var lastname = ""
+            var flag = false;
+            for (var i = 0; i < fullname.length; i++) {
+                // 0
+                // ..
+                // 8 infact that's 9 length line .
+                if (fullname[i] == "_") {
+                    flag = true
+                    continue;
+
+                }
+                // ouput name 
+                else if (flag == false) {
+                    name += fullname[i];
+
+                }
+                // output lastname
+                else if (flag == true) {
+                    lastname += fullname[i];
+                }
+            }
+            return name + " " + lastname
+
+        }
+        var firstfullname = "sanz-heydari";
+        console.log(split(firstfullname));
+
+        var value = split("zahra_joa");
+        console.log(value);
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
