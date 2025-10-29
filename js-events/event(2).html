@@ -18,6 +18,9 @@ console.log(6+9)
 function docread(){
 console.log('read_this') 
 }
+function ock(){
+document.write(6-2)
+}
 
 
 </script>
@@ -28,16 +31,26 @@ console.log('read_this')
 <!-- onclick -->
 <button onclick="print()">saw the name</button>
 <button onclick="sum()">sum</button>
-
+<hr>
 <!-- onmouseover -->
 <h2 onmouseover="sum()">sum</h2>
 
 <!-- onmouseout -->
 <p onmouseout="docread()">docread</p>
 
+<!-- onkeydown -->
+<input onkeydown="docread()" type="text">
 
 
+<!-- onchange -->
+<select onchange="docread()" name="" id="">
 
+<option value="">mrym</option>
+<option value="">ali</option>
+<option value="">amir</option>
+
+
+</select>
 
     
 </body>
