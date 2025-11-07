@@ -355,11 +355,49 @@ function zarb ( first , sec) {
 return  first * sec
 
 }
+{
 var a = 2 
 var b = 4
 
 var value = zarb(a , b)
   console.log('answer =' ,value)
+}
+
+function zud(FullName){
+
+var Name = ""
+var LastName = ""
+
+var flag = false 
+
+//review and problem creation and solving create 
+
+for( i = 0 ; i <= FullName.length ; i++ ) {
+
+  if(FullName[i]== "_"){
+    flag = true ;
+continue
+  }
+  else if ( flag == false){
+    Name += FullName[i] ;
+
+  }
+else if ( flag == true ){
+  LastName += FullName[i] ;
+
+
+}
+}
+return Name + " " + LastName ; 
+
+}
+
+var value = "sanz_heydari";
+    console.log(zud(value)) ; 
+
+var value1 = zud('sanaz_ahmadi')
+console.log(value1)
+
 
 
     </script>
