@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Event</title>
+
+    <script>
+        function print() {
+            console.log("frhn")
+        }
+
+
+        function sum() {
+            console.log(4 + 2)
+        }
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+    <button onclick="print()">چاپ کن</button>
+    <button onclick="sum()">جمع کن</button>
+
+    <!-- onmouseout , onmousedown , onmouseover -->
+
+    <p onmouseout="print()">Drag on this</p>
+    <h3 onmousedown="print()">Click on this</h3>
+    <h3 onmouseover="print()">Drag down</h3>
+<br>
+    <br>
+        <br>
+    <!-- onkeydown -->
+    <input onkeydown="print()" type="text" placeholder=" type here ">
+    <!-- onchange -->
+   <select name="" id="" onchange="print()">
+    <option value="">peraid</option>
+    <option value="">peogeut</option>
+    <option value="">porche</option>
+
+   </select>
+
+
+</body>
+
+</html>
