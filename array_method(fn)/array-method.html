@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33-34 array-method</title>
+
+    <script>
+// sort , reverse
+
+var array = [ 'koroosh' , 2 , 'frhn' , 69 , 'amir']
+
+var array2 = [ 2 , 3 ,6 ,7 ,0]
+console.log(array) 
+
+// sort
+
+array.sort()
+console.log(array)
+
+// reverse 
+array.reverse()
+console.log(array);
+
+// the complement of the sort method for the change arrangement of the ARRAY . 
+// 1-
+array2.sort(function(a,b){
+    return a - b ;
+})
+console.log(array2)
+// 2-
+array2.sort(function(a,b){
+    return b - a ;
+})
+console.log(array2)
+
+
+//////////////////////////////////////////////////////////////
+// forEach , map 
+
+var print = [ 'ali' , 'reza' , 'amir' , 'javad'] 
+
+print.forEach(function(value,index,method){
+console.log(value)
+
+})
+
+// map with return 
+
+var1 = print.map(function(value,index,method){
+return index ;
+})
+console.log(var1);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
