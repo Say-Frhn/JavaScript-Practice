@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem solving of the array-method</title>
+    <script>
+    
+    // before the starting new method of array i wanna creating problem and solving them
+
+        var meth = [2, 'amir', 4, 24, 'ali']
+        // console.log(meth.sort())
+        var sum
+        var result
+        var result_2
+        result = meth.filter(function (value, index) {
+            return typeof value === 'number';
+        })
+        console.log(result)
+        //
+
+        result_2 = meth.filter(function (value, index) {
+            return typeof value === 'string';
+        })
+        console.log(result_2)
+        
+
+    //another problem solving creation for the sum float and int sting nu(NUMBER)
+        sum = result.concat(result_2)
+        console.log(sum);
+
+        var a = ['2.3']
+        var b = ['3']
+
+        var sum
+
+        sum = parseFloat(a) + parseInt(b)
+        console.log(sum);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
