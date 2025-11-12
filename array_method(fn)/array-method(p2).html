@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part35 , every and some ; plus filter and indexOf+includes </title>
+<script>
+
+var val = [ 2 , 25 ,44 ,33]
+
+var result = val.every(function(value , index , array){
+    return value > 1
+})
+console.log(result)
+
+
+var result = val.some(function(value , index , array){
+    return index > 40
+})
+console.log(result)
+
+/////////////////// filter , indexOf
+var result = val.filter(function(value , index , array){
+    return value > 10
+})
+console.log(result)
+
+// indexOf
+
+console.log(val.indexOf(44)) ; // این نشون میده که داخل کدام آرگومان یاایندکس هست 
+console.log(val.includes(25)); // این نشون میده ایا این داخل ارای ها هست یا نه ture or false
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
