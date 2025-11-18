@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var obj = {
+            name : "amir" , 
+                lastName : "frhn" ,
+                    job : " junior front-end-dev" 
+        }
+    //spread 
+    var value = {...obj}
+    obj.cars = "206"
+        console.log('sec' , value); // this's just read the first properties object .
+
+    // delete obj
+    delete obj.name
+    console.log('first',obj);
+    
+    // object method :
+    var dev = {
+        Name : 'fakher',
+        Loc : 'Apadana',
+        sum : function(){
+            return 4 + 6 ;
+        }
+    }
+    var print = dev.sum();
+    console.log(dev);
+    console.log(print);
+    
+    
+    
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
