@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review of event</title>
+
+    <script>
+        // var cart = ["Apple", "Milk", "Bread"];
+        // console.log(cart.concat("hello"))
+
+        // var rmv = ["Apple", "Milk", "Bread"];
+        // console.log(rmv.slice())
+
+        // // with push and pop
+
+        // var ezafe = ["Apple", "Milk", "Bread"];
+        // console.log(ezafe.push(1, "hey"))
+        // console.log('ezafe =', ezafe);
+
+        // var hazf = ["Apple", "Milk", "Bread"];
+        // console.log(hazf.pop())
+        // console.log(hazf)
+
+
+        // var cart = ["Apple", "Milk", "Bread"];
+
+        // function add(item) {
+        //     cart.push(item);
+        //     console.log(cart)
+        // }
+        // function remove() {
+        //     cart.pop();
+        //     console.log(cart)
+        // }
+        // add("Egg");
+        // remove();
+        //
+        function print(fullname) {
+
+            var name = ""
+            var lastname = ""
+
+            var flag = false
+
+            for (i = 0; i < fullname.length; i++) {
+                if (i == "_"){
+                    flag = true
+                continue
+            }
+            else if (flag == false) {
+                name += fullname[i]
+            }
+            else if (flag == true) {
+                lastname += fullname[i]
+            }
+            return name + ' ' + lastname;
+        }}
+        var value=print("amir_frhn")
+            console.log(value)
+var value1 = "sanz_heydari";
+    console.log(print(value1)) ; 
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
