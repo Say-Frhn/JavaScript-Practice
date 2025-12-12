@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+function Person(model, name, brand) {  
+    this.model = model;
+    this.name = name;
+    this.brand = brand;
+    this.newMaker = function() {
+        console.log(this.name + ' ' + this.model);
+    }
+}
+
+// ابتدا prototype را تنظیم می‌کنیم
+Person.prototype.Expired = "2027";
+
+// سپس نمونه‌ها را ایجاد می‌کنیم
+var show = new Person('206', 'modIran', 'peugeot');
+show.eColor = "blue";  // اضافه کردن پراپرتی فقط به نمونه 'show'
+show.fit = "fix";      // اضافه کردن پراپرتی دیگر فقط به 'show'
+
+var review = new Person('207', 'iranKhodro', 'peugeot');
+
+console.log(show);
+console.log(review);
+
+console.log(show.model); // "206"
+show.newMaker(); // "modIran 206"
+console.log(show.Expired,' Expired :',review.Expired);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
