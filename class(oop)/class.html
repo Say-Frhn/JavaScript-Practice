@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+class Father {
+    constructor(Name, lastName, Job) {
+        this.Name = Name;
+        this.lastName = lastName;
+        this.Job = Job; 
+    }
+}
+
+class son extends Father {
+    constructor(Name, lastName, Job, birth, hobby) {
+        super(Name, lastName, Job); 
+        this.birth = birth;
+        this.hobby = hobby;
+    }
+
+    introduce() {
+        return `Hello, my name is ${this.Name} ${this.lastName}, I am a ${this.Job}, and my hobby is ${this.hobby}.`;
+    }
+}
+
+var show = new Father("amir", "rezei", "webDev");
+var show_1 = new son("reza", "amiri", "uber", "2006", "game");
+
+console.log("نمونه Father:", show);
+console.log("نمونه son:", show_1);
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
