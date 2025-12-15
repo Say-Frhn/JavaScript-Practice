@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+class Father {
+    constructor(Name , lastName){
+    this.Name=Name;
+    this.lastName=lastName;
+
+}
+    fullNameMaker(){
+    console.log(this.Name + '_' + this.lastName);
+    }  
+}
+class Son extends Father {
+    constructor(Name,lastName,eyeColor){
+    super(Name,lastName)
+    
+    this.eyeColor=eyeColor;
+    }
+}
+
+var show = new Father ("abtin","trump")
+var show_1 = new Son ("daniel","trump","black")
+
+console.log(show,show_1);
+show.fullNameMaker();
+show_1.fullNameMaker();
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
