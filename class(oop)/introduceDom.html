@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+<h1 id="heading1" class="allHead">عنوان1</h1>
+<h1 id="heading2" class="allHead">عنوان2</h1>
+<h1 id="heading3" class="allHead">عنوان3</h1>
+
+
+<script>
+
+let head = document.getElementById("heading1");
+let headingValue = head.innerHTML;
+
+    head.innerHTML = "سلام به همه"; 
+        console.log(headingValue);
+
+// ولی میتوینم از کلاس ها هم استفاده کنیم
+let allHead = document.getElementsByClassName("allHead");
+    
+    allHead[0].innerHTML="title one";
+        console.log(allHead[0]);
+        
+
+// همینطور الان میتونی از همنیجا به اسکوپ ها استایل بدی 
+
+heading1.style.color="#a00";
+
+</script>
+    
+</body>
+</html>
