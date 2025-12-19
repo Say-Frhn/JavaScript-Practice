@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+#buttonBoddy{
+    width: 300px;
+    height: 100%;
+    background-color: #181717;
+    top: 0;
+    right: -300px;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+#test{
+  
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 99px;
+    position: fixed;
+}
+
+</style>
+
+<button id="test">Click</button>
+<div id="buttonBoddy"> </div>
+
+
+<script>
+
+let button = document.getElementById("test") 
+let buttonBoddy = document.getElementById("buttonBoddy")
+
+
+button.addEventListener("click", function(){
+    if(buttonBoddy.style.right === "-300px"){
+        buttonBoddy.style.right="0"
+    }else{
+        buttonBoddy.style.right="-300px"
+    } 
+})
+
+
+</script>
+    
+
+
+</body>
+</html>
