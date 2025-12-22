@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+
+
+<script>
+let show = document.createElement("div");
+show.setAttribute("id", "buttonBody");
+document.body.appendChild(show);
+
+let button = document.createElement("button");
+button.setAttribute("id", "myButton");
+
+// استفاده درست از نام متغیر (button به جای myButton)
+button.innerHTML = "click me"; 
+show.appendChild(button);
+button.addEventListener("click", function() {
+    let text = document.createElement("h1");
+    text.innerHTML = "hello world";
+    show.appendChild(text);
+});
+// اندازه پنجره مرورگر را در کنسول نمایش می‌دهد که یک ویژگی از DOM است
+console.log("width:"+window.innerWidth);
+console.log("height:"+window.innerHeight);
+
+
+
+
+
+
+</script>    
+    
+</body>
+</html>
