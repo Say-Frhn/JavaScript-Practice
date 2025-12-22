@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+  <!DOCTYPE html>
+<html lang="fa">
+<head>
+    <style>
+        #wrapper {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            min-height: 50px;
+        }
+        
+        #buttonBody {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #buttonBody:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper"></div> 
+<button id="buttonBody">click</button> 
+
+
+
+<script>
+  
+    let buttonBody = document.getElementById("buttonBody");
+    let wrapper = document.getElementById("wrapper");
+
+    buttonBody.addEventListener("click", function(){
+        wrapper.innerHTML = "<h1>hello world</h1>";
+    });
+</script>
+
+</body>
+</html>
+    
