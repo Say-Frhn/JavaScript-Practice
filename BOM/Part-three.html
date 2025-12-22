@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>introduce to setInterval & setTimeout</title>
+</head>
+<body>
+<script>
+let counter = 60;
+
+setInterval(() => {
+    if(counter === 0){
+        clearInterval();
+    }
+    else{
+     counter-- ; 
+     document.getElementById("showUp").innerHTML=counter;
+}},1000);
+document.write("<h1 id='showUp'>60</h1>");
+
+
+
+
+
+
+
+
+</script>
+    
+
+
+    
+</body>
+</html>
