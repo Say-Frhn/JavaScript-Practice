@@ -40,7 +40,52 @@ let box = document.getElementById("box")
     
 
 data.data.map((value)=>{
-    console.log(value)
+    console.log(value);
+box.innerHTML = box.innerHTML + `<p>  ${value.name}  </p>`
+    
+})
+
+
+
+
+
+</script>    
+    
+</body>
+<body>
+
+<div id="box">
+
+    
+    
+</div>
+
+<script>
+let data  = {
+    page :2,
+    per_page:6 , 
+    total: 12,
+    data:[
+    {
+        id:1,
+        name: "frhn"
+    },
+    {
+        id:2,
+        name:"frhd"
+    },
+    {
+        id:3,
+        name:"Xzit"
+    }
+    ]
+}
+let box = document.getElementById("box")
+    console.log(data.data);
+    
+
+data.data.map((value)=>{
+    console.log(value);
 box.innerHTML = box.innerHTML + `<p>  ${value.name}  </p>`
     
 })
